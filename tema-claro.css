@@ -1,0 +1,174 @@
+:root {
+    /*Cores do tema*/
+    --violeta: #9800EF;
+    --lilas: #C083EF;
+    --lilas-mais-claro: #DCC0EF;
+    --laranja: #E63329;
+    --amarelo: #FF930A;
+    --violeta-medio: #5F2B80;
+    --violeta-escuro: #39005B;
+    --violeta-mais-escuro: #28003F;
+    --variacao-branco: #F2EFEB; 
+}
+
+/* Estilo geral da página */
+#conteudoPagina {
+    background-color: var(--variacao-branco);
+}
+
+/* Estilo da barra de navegação */
+#barraNavegacao {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 7px -3px;
+    background-color: var(--variacao-branco);
+}
+
+#navBtContato {
+    border: 1px solid var(--violeta);
+    color: var(--violeta);
+}
+
+#navSecoes #navBtContato:hover {
+    background-color: var(--violeta);
+    color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#navSecoes .nav-link:hover {
+    color: var(--violeta);
+}
+
+#navSecoes .nav-link.ativo {
+    border-bottom: 2px solid var(--violeta);
+}
+
+#navSecoes #botaoContato {
+    border: none;
+}
+
+/* Estilo geral das seções */
+.titulo-secao::after {
+    background: var(--violeta);
+}
+
+/* Seção "Início" */
+.titulo span {
+    color: var(--violeta);
+}
+
+#btProsseguir, #btVoltarAoTopo {
+    border: 2px solid var(--violeta);
+    color: var(--violeta);
+}
+
+#btProsseguir:hover, #btVoltarAoTopo:hover {
+    color: white;
+    background-color: var(--violeta);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+/* Seção "Sobre mim" */
+#fotoSobreMim img {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+
+#habilidades > i {
+    color: var(--violeta);
+}
+
+/* Seção "Projetos" */
+.filtro:hover {
+    color: var(--violeta) !important;
+}
+
+.filtro.ativo {
+    background-color: var(--violeta);
+    color: white;
+}
+
+.filtro.ativo:hover {
+    color: white !important;
+}
+
+.card-projeto {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    background-color: white;
+}
+
+.txt-projeto {
+    color: white;
+}
+
+.card-projeto:hover {
+    background-color: var(--violeta-escuro);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.ver-detalhes {
+    background: transparent;
+    border: 2px solid var(--violeta);
+    color: white;
+}
+
+.ver-detalhes:hover {
+    background: var(--violeta);
+}
+
+.tecnologia, .rotulo {
+    background-color:rgba(192, 131, 239, 0.2);
+    color: var(--violeta);
+}
+
+.botoes-modal a {
+    color: var(--violeta); 
+}
+
+#btVisualizar {
+    border: 1px solid var(--violeta);
+    color: var(--violeta);
+}
+
+#btVisualizar:hover, #btCodigoFonte:hover {
+    background-color: var(--violeta);
+    color: white;
+}
+
+#btCodigoFonte {
+    background-color: rgba(192, 131, 239, 0.2);
+}
+
+/* Seção "Contatos" */
+
+.contato i {
+    border: 2px solid var(--violeta);
+    color: var(--violeta);
+}
+
+.contato i:hover {
+    background-color: var(--violeta);
+    color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+/* Botão para alterar estilo */
+#btAlterarTema {
+    color: var(--violeta);
+    background-color: transparent;
+}
+
+#iconTemaEscuro {
+    display: none;
+}
+
+/*Rodapé*/
+#rodape {
+    background-color: var(--variacao-branco);
+}
+
+#rodape .codigo-fonte i{
+    color: black;
+} 
+
+#rodape .codigo-fonte:hover i {
+    color: var(--violeta);
+}

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfólio</title>
+        
+        <link rel="shortcut icon" href="img/logo-aba.png" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="tema-claro.css" id="temaCSS">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script defer src="https://kit.fontawesome.com/8cb24f1eb7.js"></script>
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <nav id="barraNavegacao" class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" id="navLogotipo">
+                    <img src="img/logo-clara1.png" id="imgLogotipo" alt="Logotipo"> 
+                    <span class="align-middle">Portfólio</span>
+                </a>
+                <button id="btAlterarTema" class="modo-claro"><i id="iconTemaClaro" class="fa-solid fa-sun"></i><i id="iconTemaEscuro" class="fa-solid fa-moon"></i></button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navPortfolio" aria-controls="navPortfolio" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navPortfolio">
+                    <div id="navSecoes" class="navbar-nav">
+                        <a class="nav-link active ativo" aria-current="page" href="#secaoInicio">Início</a>
+                        <a class="nav-link active" aria-current="page" href="#secaoSobreMim">Sobre mim</a>
+                        <a class="nav-link active" aria-current="page" href="#secaoProjetos">Projetos</a>
+                        <a class="nav-link active" aria-current="page" href="#secaoContato" id="botaoContato"><span id="navBtContato">Entre em contato</span></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div class="container-fluid g-0" id="conteudoPagina">
+                <section class="secao" id="secaoInicio">
+                    <div class="conteudo-secao">
+                        <div class="row container-fluid g-0">
+                            <div class="col-md-6 col-lg-7">
+                                <div id="textoInicio">
+                                    <div class="titulo">Olá, sou a <br><span>Isabela Borges</span></div>
+                                    <div class="subtitulo">Estudante de Análise e Desenvolvimento de Sistemas</div>
+                                    <a id="btProsseguir" href="#secaoSobreMim"><i class="fa-solid fa-chevron-down"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-5">
+                                <div id="imagemInicio">
+                                    <img src="img/coding.svg" alt="Ilustração com mulher programando">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>              
+                <section class="secao" id="secaoSobreMim">
+                    <div class="conteudo-secao">
+                        <div class="row container-fluid g-0">
+                            <div class="col-12">
+                                <h2 class="titulo-secao">Sobre mim</h2>
+                            </div>
+                            <div class="col-lg-5 col-xl-4 order-lg-1">
+                                <div id="fotoSobreMim">
+                                    <img src="img/foto-perfil.png" alt="Minha foto">
+                                </div>
+                            </div>
+                            <div class="col-lg-7 col-xl-8">
+                                <div id="textoSobreMim">
+                                    <p class="texto-secao">Comecei minha jornada na tecnologia no final de 2023, estudando por conta própria através de cursos de curta duração, principalmente nas plataformas Alura e Cisco. No momento estou cursando Análise e Desenvolvimento de Sistemas na PUC Minas e desenvolvi este portfólio como um meio de demonstrar na prática os conhecimentos e habilidades que estou construindo.</p>
+                                    <p class="texto-secao">Sou apaixonada pela área e busco constantemente me desafiar e aprender coisas novas. Como estudante, meu foco atual é explorar diferentes campos de conhecimento na tecnologia e me aprofundar naqueles que já tenho algum conhecimento. Estou aberta a oportunidades de estágio, colaborações e trabalhos voluntários. </p>
+                                    <div id="habilidades">
+                                        <div class="subtitulo-secao">Habilidades e tecnologias</div>
+                                        <i class="fa-brands fa-html5" data-bs-toggle="tooltip" data-bs-title="HTML"></i>
+                                        <i class="fa-brands fa-css3-alt" data-bs-toggle="tooltip" data-bs-title="CSS"></i>
+                                        <i class="fa-brands fa-js" data-bs-toggle="tooltip" data-bs-title="JavaScript"></i>
+                                        <i class="fa-brands fa-python" data-bs-toggle="tooltip" data-bs-title="Python"></i>
+                                        <i class="fa-brands fa-bootstrap" data-bs-toggle="tooltip" data-bs-title="Bootstrap"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section> 
+                <section class="secao" id="secaoProjetos">
+                    <div class="conteudo-secao">
+                        <h2 class="titulo-secao">Projetos</h2>
+                        <nav id="navFiltrosProjetos">
+                            <ul class="filtros">
+                                <li class="filtro ativo nav-link" id="filtroTodos">Todos</li>
+                                <li class="filtro nav-link" id="filtroDevWeb">Desenvolvimento web</li>
+                                <li class="filtro nav-link" id="filtroFrontEnd">Front-end</li>
+                            </ul>
+                        </nav>
+                        <div class="row container-fluid g-0 projetos">
+                            <div class="projeto dev-web front-end col-md-10 col-lg-6 col-xxl-4">
+                                <div class="card-projeto" id="projetoGioPsi">
+                                    <div class="capa-card">
+                                        <img src="img/coming-soon.svg" alt="" class="img-projeto">
+                                        <div class="titulo-projeto">Giovana Mondek: Psicologia</div>
+                                        <div class="rotulos">
+                                            <span class="rotulo">Desenvolvimento web</span>
+                                            <span class="rotulo">Front-end</span>
+                                        </div>
+                                    </div>
+                                    <div class="txt-projeto">
+                                        <div class="subtitulo-secao titulo-projeto">Giovana Mondek: Psicologia</div>
+                                        <div class="texto-secao descricao-projeto">Uma <i>landing page</i> simples e responsiva para apresentar o trabalho de Giovana como psicóloga clínica.</div>
+                                        <button class="ver-detalhes bt-primario-escuro" data-bs-toggle="modal" data-bs-target="#modalProjetoGioPsi">Ver detalhes</button>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="modalProjetoGioPsi" tabindex="-1" aria-labelledby="modalLabelProjetoGioPsi" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="modalLabelProjetoGioPsi">Giovana Mondek: Psicologia</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row conteudo-modal">
+                                                    <div class="col-lg-6">
+                                                        <img src="img/web-dev-1.svg" alt="" class="img-modal">
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="texto-modal">
+                                                            <div class="detalhes-projeto">
+                                                                <div class="txt-secao">A página atualmente está em fase de desenvolvimento. Em breve serão adicionados detalhes sobre o projeto.</div>
+                                                                <div class="tecnologias">
+                                                                    <span class="tecnologia">HTML</span>
+                                                                    <span class="tecnologia">CSS</span>
+                                                                    <span class="tecnologia">JavaScript</span>
+                                                                    <span class="tecnologia">Bootstrap</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <div class="botoes-modal">
+                                                    <a href="#" target="_blank" id="btVisualizar" class="bt-desativado">
+                                                        Visualizar página
+                                                    </a>
+                                                    <a href="#" target="_blank" id="btCodigoFonte" class="bt-desativado">
+                                                        <i class="fa-brands fa-github"></i>
+                                                        Código-fonte
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="projeto dev-web front-end col-md-10 col-lg-6 col-xxl-4">
+                                <div class="card-projeto" id="projetoFarom">
+                                    <div class="capa-card">
+                                        <img src="img/coming-soon3.svg" alt="" class="img-projeto">
+                                        <div class="titulo-projeto">Farom</div>
+                                        <div class="rotulos">
+                                            <span class="rotulo">Desenvolvimento web</span>
+                                            <span class="rotulo">Front-end</span>
+                                        </div>
+                                    </div>
+                                    <div class="txt-projeto">
+                                        <div class="subtitulo-secao titulo-projeto">Farom</div>
+                                        <div class="texto-secao descricao-projeto">Uma <i>landing page</i> da empresa de psicologia Farom, com o intuito de apresentar os serviços, treinamentos e cursos oferecidos.</div>
+                                        <button class="ver-detalhes bt-primario-escuro" data-bs-toggle="modal" data-bs-target="#modalProjetoFarom">Ver detalhes</button>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="modalProjetoFarom" tabindex="-1" aria-labelledby="modalLabelProjetoFarom" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="modalLabelProjetoFarom">Farom</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row conteudo-modal">
+                                                    <div class="col-lg-6">
+                                                        <img src="img/web-dev-2.svg" alt="" class="img-modal">
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="texto-modal">
+                                                            <div class="detalhes-projeto">
+                                                                <div class="txt-secao">A página atualmente está em fase de planejamento. Em breve serão adicionados detalhes sobre o projeto.</div>
+                                                                <div class="tecnologias">
+                                                                    <span class="tecnologia">HTML</span>
+                                                                    <span class="tecnologia">CSS</span>
+                                                                    <span class="tecnologia">JavaScript</span>
+                                                                    <span class="tecnologia">Bootstrap</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <div class="botoes-modal">
+                                                    <a href="#" target="_blank" id="btVisualizar" class="bt-desativado">
+                                                        Visualizar página
+                                                    </a>
+                                                    <a href="#" target="_blank" id="btCodigoFonte" class="bt-desativado">
+                                                        <i class="fa-brands fa-github"></i>
+                                                        Código-fonte
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="secao" id="secaoContato">
+                    <div class="conteudo-secao">
+                        <h2 class="titulo-secao">Contatos</h2>
+                        <div class="row contatos container-fluid g-0">
+                            <div class="col-md-3 col-lg-2 contato">
+                                <a href="mailto:isabelaborg@outlook.com" target="_blank">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </a>
+                                <div class="subtitulo-secao">E-mail</div>
+                                <div class="meu-contato">isabelaborg@outlook.com</div>
+                            </div>
+                            <div class="col-md-3 col-lg-2 contato">
+                                <a href="https://github.com/isabelaborgs" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <div class="subtitulo-secao">GitHub</div>
+                                <div class="meu-contato">@isabelaborgs</div>
+                            </div>
+                            <div class="col-md-3 col-lg-2 contato">
+                                <a href="https://www.linkedin.com/in/isabela-borgs/" target="_blank">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                                <div class="subtitulo-secao">LinkedIn</div>
+                                <div class="meu-contato">@isabela-borgs</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div id="topo">
+                    <a id="btVoltarAoTopo" href="#"><i class="fa-solid fa-chevron-up"></i></a>
+                </div> 
+                <hr>
+            </div>
+        </main>
+        <footer id="rodape">
+            <div class="copyright">&copy; 2024 Isabela Borges
+                <span class="codigo-fonte">
+                    <a href="https://github.com/isabelaborgs" target="_blank"><i class="fa-brands fa-github" data-bs-toggle="tooltip" data-bs-title="Código-fonte da página"></i></a>
+                </span>
+            </div>
+            <div id="creditosIlustracoes">Ilustrações por <a href="https://pixels.market/illustrations/yellowstripe" target="_blank">Pixels Market <i class="align-middle fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        </footer>
+    </body>
+</html>
