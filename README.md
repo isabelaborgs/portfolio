@@ -2,7 +2,13 @@
   <img src="img/logo-aba.png" alt="IB" width="150" align="center"/>
 </p>
 <h1 align="center">Portfólio pessoal</h1>
-<h4 align="center">Portfólio pessoal simples que apresenta informações sobre mim e meus projetos desenvolvidos. </h4>
+
+<p align="center"><b>Portfólio pessoal simples que apresenta informações sobre mim e meus projetos desenvolvidos.</b> </p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/status-done-green"/>
+  <img src="https://img.shields.io/badge/license-MIT-blue"/>
+</p>
 
 ## Funcionalidades
 
