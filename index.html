@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,13 +15,13 @@
         <script defer src="script.js"></script>
     </head>
     <body>
+        <!--Barra de navegação das seções da página-->
         <nav id="barraNavegacao" class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#" id="navLogotipo">
                     <img src="img/logo-clara1.png" id="imgLogotipo" alt="Logotipo"> 
                     <span class="align-middle">Portfólio</span>
                 </a>
-                <button id="btAlterarTema" class="modo-claro"><i id="iconTemaClaro" class="fa-solid fa-sun"></i><i id="iconTemaEscuro" class="fa-solid fa-moon"></i></button>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navPortfolio" aria-controls="navPortfolio" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -30,13 +30,20 @@
                         <a class="nav-link active ativo" aria-current="page" href="#secaoInicio">Início</a>
                         <a class="nav-link active" aria-current="page" href="#secaoSobreMim">Sobre mim</a>
                         <a class="nav-link active" aria-current="page" href="#secaoProjetos">Projetos</a>
-                        <a class="nav-link active" aria-current="page" href="#secaoContato" id="botaoContato"><span id="navBtContato">Entre em contato</span></a>
+                        <a class="nav-link active" aria-current="page" href="#secaoContato">
+                            <span id="navBtContato">Entre em contato</span>
+                        </a>
+                        <button id="btAlterarTema" class="modo-claro">
+                            <i id="iconTemaClaro" class="fa-solid fa-sun"></i>
+                            <i id="iconTemaEscuro" class="fa-solid fa-moon"></i>
+                        </button>
                     </div>
                 </div>
             </div>
         </nav>
         <main>
             <div class="container-fluid g-0" id="conteudoPagina">
+                <!--Seção inicial-->
                 <section class="secao" id="secaoInicio">
                     <div class="conteudo-secao">
                         <div class="row container-fluid g-0">
@@ -54,7 +61,8 @@
                             </div>
                         </div>
                     </div>
-                </section>              
+                </section>
+                <!--Seção "Sobre mim"-->              
                 <section class="secao" id="secaoSobreMim">
                     <div class="conteudo-secao">
                         <div class="row container-fluid g-0">
@@ -83,6 +91,7 @@
                         </div>
                     </div>
                 </section> 
+                <!--Seção "Projetos"-->
                 <section class="secao" id="secaoProjetos">
                     <div class="conteudo-secao">
                         <h2 class="titulo-secao">Projetos</h2>
@@ -213,6 +222,7 @@
                         </div>
                     </div>
                 </section>
+                <!--Seção "Contatos"-->
                 <section class="secao" id="secaoContato">
                     <div class="conteudo-secao">
                         <h2 class="titulo-secao">Contatos</h2>
@@ -247,6 +257,7 @@
                 <hr>
             </div>
         </main>
+        <!--Rodapé-->
         <footer id="rodape">
             <div class="copyright">&copy; 2024 Isabela Borges
                 <span class="codigo-fonte">

@@ -1,8 +1,31 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+/*Ativa tooltips do Bootstrap*/
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+
+/*Observa seções em interseção e as classifica*/
+const sectionObserver = new IntersectionObserver(
+    entries => {
+        entries.forEach(entry => {
+            let visivel = entry.isIntersecting;
+            if (visivel) {
+                entry.target.classList.remove("slide-out");
+                entry.target.classList.add("slide-in");
+            } else {
+                entry.target.classList.remove("slide-in");
+                entry.target.classList.add("slide-out");
+            }
+        });
+    },
+    {threshold: 0.4}
+);
+
+const secoes = document.querySelectorAll(".secao");
+
+secoes.forEach(secao => {
+    sectionObserver.observe(secao);
 })
 
+/*Altera tema da página para escuro ou claro e salva no armazenamento local*/
 function salvarTema(tema) {
     localStorage.setItem("tema", JSON.stringify(tema));
 }
@@ -52,31 +75,7 @@ function aplicarTemaSalvo() {
     }
 }
 
-alterarTema();
-aplicarTemaSalvo();
-
-const sectionObserver = new IntersectionObserver(
-    entries => {
-        entries.forEach(entry => {
-            let visivel = entry.isIntersecting;
-            if (visivel) {
-                entry.target.classList.remove("slide-out");
-                entry.target.classList.add("slide-in");
-            } else {
-                entry.target.classList.remove("slide-in");
-                entry.target.classList.add("slide-out");
-            }
-        });
-    },
-    {threshold: 0.4}
-);
-
-const secoes = document.querySelectorAll(".secao");
-
-secoes.forEach(secao => {
-    sectionObserver.observe(secao);
-})
-
+/*Filtra projetos por categoria e destaca filtro atual */
 function exibirProjetos(filtro) {
     const listaProjetos = document.querySelectorAll(".projeto");
     listaProjetos.forEach(projeto => {
@@ -102,22 +101,23 @@ function filtrarProjetos() {
     })
 }
 
-function ativarLinksNav(idNav) {
-    const navLinks = idNav.querySelectorAll(".nav-link");
-    for (let i = 0; i < navLinks.length; i++) {
-        navLinks[i].addEventListener("click", () => {
-            let clicado = navLinks[i];
-            for (let j = 0; j < navLinks.length; j++) {
-                if (navLinks[j] === clicado) {
-                    navLinks[j].classList.add("ativo")
+function ativarLinksFiltros() {
+    const filtros = navFiltrosProjetos.querySelectorAll(".filtro");
+    for (let i = 0; i < filtros.length; i++) {
+        filtros[i].addEventListener("click", () => {
+            let clicado = filtros[i];
+            for (let j = 0; j < filtros.length; j++) {
+                if (filtros[j] === clicado) {
+                    filtros[j].classList.add("ativo")
                 } else  {
-                    navLinks[j].classList.remove('ativo')
+                    filtros[j].classList.remove('ativo')
                 }
             }
         })
     }
 }
 
+alterarTema();
+aplicarTemaSalvo();
 filtrarProjetos();
-ativarLinksNav(barraNavegacao);
-ativarLinksNav(navFiltrosProjetos);
+ativarLinksFiltros();

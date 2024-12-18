@@ -49,14 +49,6 @@
     color: var(--violeta);
 }
 
-#navSecoes .nav-link.ativo {
-    border-bottom: 2px solid var(--violeta);
-}
-
-#navSecoes #botaoContato {
-    border: none;
-}
-
 /* Estilo geral das seções */
 .titulo-secao, .subtitulo-secao {
     color: var(--variacao-branco);

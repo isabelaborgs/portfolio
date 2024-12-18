@@ -54,9 +54,6 @@ a:any-link {
 #btAlterarTema {
     border: none;
     margin-left: 2px;
-    position: absolute;
-    right: 1rem;
-    top: 3.8vh;
     font-size: 1.2em;
 }
 
@@ -196,17 +193,13 @@ a:any-link {
 }
 
 /* Seção "Sobre mim" */
-#textoSobreMim .texto-secao {
-    font-size: 1.2em;
-}
-
 #fotoSobreMim {
     text-align: center;
     margin-bottom: 2rem;
 }
 
 #fotoSobreMim img{
-    width: 350px;
+    width: 260px;
     border-radius: 50%;
 }
 
@@ -215,10 +208,18 @@ a:any-link {
         text-align: end;
     }
 
+    #fotoSobreMim img{
+        width: 350px;
+    }
+
     #textoSobreMim {
         align-items: start;
         text-align: start;
         padding-right: 0.7rem;
+    }
+
+    #textoSobreMim .texto-secao {
+        font-size: 1.2em;
     }
 }
 
@@ -240,12 +241,20 @@ a:any-link {
 
 /* Seção "Projetos" */
 .filtros {
+    padding: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     column-gap: 1rem;
     list-style: none;
-    font-size: 1.2em;
+}
+
+@media screen and (min-width: 768px) {
+    .filtros {
+        flex-direction: row;
+        font-size: 1.2em;
+    }
 }
 
 .filtro {
@@ -271,7 +280,6 @@ a:any-link {
     align-content: stretch;
     border-radius: 20px;
     position: relative;
-    width: 90%;
 }
 
 @media screen and (min-width: 768px) {
@@ -417,15 +425,26 @@ a:any-link {
 /* Animações para exibição das seções*/
 .slide-in .conteudo-secao{
     animation-name: slideIn;
-    animation-duration: 1.7s;
+    animation-duration: 1.3s;
     opacity: 1;
 }
 
 .slide-out .conteudo-secao {
     animation-name: slideOut;
-    animation-duration: 1.7s;
+    animation-duration: 1.3s;
     opacity: 0;
-    transition-delay: 1.5s;
+    transition-delay: 1.2s;
+}
+
+@media screen and (min-width: 768px) {
+    .slide-in .conteudo-secao{
+        animation-duration: 1.7s;
+    }
+    
+    .slide-out .conteudo-secao {
+        animation-duration: 1.7s;
+        transition-delay: 1.5s;
+    }
 }
   
 @keyframes slideIn {
