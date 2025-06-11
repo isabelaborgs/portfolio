@@ -99,6 +99,10 @@ function filtrarProjetos() {
     filtroFrontEnd.addEventListener("click", () => {
         exibirProjetos("front-end");
     })
+
+    filtroFullStack.addEventListener("click", () => {
+        exibirProjetos("full-stack");
+    })
 }
 
 function ativarLinksFiltros() {

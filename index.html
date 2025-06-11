@@ -100,46 +100,115 @@
                                 <li class="filtro ativo nav-link" id="filtroTodos">Todos</li>
                                 <li class="filtro nav-link" id="filtroDevWeb">Desenvolvimento web</li>
                                 <li class="filtro nav-link" id="filtroFrontEnd">Front-end</li>
+                                <li class="filtro nav-link" id="filtroFullStack">Full-stack</li>
                             </ul>
                         </nav>
                         <div class="row container-fluid g-0 projetos">
+                            <!--Landing page de psicologia-->
                             <div class="projeto dev-web front-end col-md-10 col-lg-6 col-xxl-4">
-                                <div class="card-projeto" id="projetoGioPsi">
+                                <div class="card-projeto" id="landingPsicologia">
                                     <div class="capa-card">
-                                        <img src="img/coming-soon.svg" alt="" class="img-projeto">
-                                        <div class="titulo-projeto">Giovana Mondek: Psicologia</div>
+                                        <img src="img/thumbnail-giovana.svg" alt="" class="thumbnail-projeto">
+                                    </div>
+                                    <div class="txt-projeto">
                                         <div class="rotulos">
                                             <span class="rotulo">Desenvolvimento web</span>
                                             <span class="rotulo">Front-end</span>
                                         </div>
-                                    </div>
-                                    <div class="txt-projeto">
-                                        <div class="subtitulo-secao titulo-projeto">Giovana Mondek: Psicologia</div>
                                         <div class="texto-secao descricao-projeto">Uma <i>landing page</i> simples e responsiva para apresentar o trabalho de Giovana como psicóloga clínica.</div>
-                                        <button class="ver-detalhes bt-primario-escuro" data-bs-toggle="modal" data-bs-target="#modalProjetoGioPsi">Ver detalhes</button>
+                                        <button class="ver-detalhes bt-primario-escuro" data-bs-toggle="modal" data-bs-target="#modalLandingPsicologia">Ver detalhes</button>
                                     </div>
                                 </div>
-                                <div class="modal fade" id="modalProjetoGioPsi" tabindex="-1" aria-labelledby="modalLabelProjetoGioPsi" aria-hidden="true">
+                                <!--Modal landing page psicologia-->
+                                <div class="modal fade" id="modalLandingPsicologia" tabindex="-1" aria-hidden="true">
+                                    <div class="modal-dialog modal-xl modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5">Landing Page de Psicologia</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row conteudo-modal">
+                                                    <div class="col-xl-7">
+                                                        <video controls width="100%">
+                                                            <source src="videos/landing-page-giovana.mp4" type="video/mp4" />
+                                                        </video>
+                                                    </div>
+                                                    <div class="col-xl-5">
+                                                        <div class="texto-modal">
+                                                            <div class="detalhes-projeto">
+                                                                
+                                                                <div class="txt-secao">
+                                                                    A landing page foi desenvolvida voluntariamente para a psicóloga Giovana Mondek. A página apresenta os principais serviços oferecidos por ela, com o objetivo de informar pessoas interessadas em seu trabalho e direcionar para o contato via WhatsApp. As cores, logotipo, ilustrações e textos foram selecionados por Giovana de acordo com sua identidade visual já existente. A página foi desenvolvida com HTML, CSS e Bootstrap e possui design minimalista e responsivo para diferentes tamanhos de tela.
+                                                                </div>
+                                                                <div class="tecnologias">
+                                                                    <span class="tecnologia">HTML</span>
+                                                                    <span class="tecnologia">CSS</span>
+                                                                    <span class="tecnologia">Bootstrap</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <div class="botoes-modal">
+                                                    <a href="https://psigiovanamondek.vercel.app/" target="_blank" id="btVisualizar" class="">
+                                                        Visualizar página
+                                                    </a>
+                                                    <a href="https://github.com/isabelaborgs/landing-page-giovana" target="_blank" id="btCodigoFonte" class="">
+                                                        <i class="fa-brands fa-github"></i>
+                                                        Código-fonte
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Cesta Solidária-->
+                            <div class="projeto dev-web full-stack col-md-10 col-lg-6 col-xxl-4">
+                                <div class="card-projeto" id="cestaSolidaria">
+                                    <div class="capa-card">
+                                        <img src="img/thumbnail-cesta-solidaria.svg" alt="" class="thumbnail-projeto">
+                                    </div>
+                                    <div class="txt-projeto">
+                                        <div class="rotulos">
+                                            <span class="rotulo">Desenvolvimento web</span>
+                                            <span class="rotulo">Full-stack</span>
+                                        </div>
+                                        <div class="texto-secao descricao-projeto">Uma aplicação web que conecta doadores de alimentos a ONGs que os redistribuem a pessoas em situação de insegurança alimentar.</div>
+                                        <button class="ver-detalhes bt-primario-escuro" data-bs-toggle="modal" data-bs-target="#modalCestaSolidaria">Ver detalhes</button>
+                                    </div>
+                                </div>
+                                <!--Modal Cesta Solidária-->
+                                <div class="modal fade" id="modalCestaSolidaria" tabindex="-1" aria-labelledby="modalLabelCestaSolidaria" aria-hidden="true">
                                     <div class="modal-dialog modal-lg modal-dialog-centered">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h1 class="modal-title fs-5" id="modalLabelProjetoGioPsi">Giovana Mondek: Psicologia</h1>
+                                                <h1 class="modal-title fs-5" id="modalLabelCestaSolidaria">Cesta Solidária</h1>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body">
                                                 <div class="row conteudo-modal">
                                                     <div class="col-lg-6">
-                                                        <img src="img/web-dev-1.svg" alt="" class="img-modal">
+                                                        <img src="img/web-dev-2.svg" alt="" class="img-modal">
                                                     </div>
                                                     <div class="col-lg-6">
                                                         <div class="texto-modal">
                                                             <div class="detalhes-projeto">
-                                                                <div class="txt-secao">A página atualmente está em fase de desenvolvimento. Em breve serão adicionados detalhes sobre o projeto.</div>
+                                                                <div class="txt-secao">Projeto desenvolvido no segundo semestre do curso de Análise e Desenvolvimento de Sistemas. A aplicação atualmente está em fase de desenvolvimento. Em breve serão adicionados detalhes sobre o projeto.</div>
                                                                 <div class="tecnologias">
                                                                     <span class="tecnologia">HTML</span>
                                                                     <span class="tecnologia">CSS</span>
                                                                     <span class="tecnologia">JavaScript</span>
                                                                     <span class="tecnologia">Bootstrap</span>
+                                                                    <span class="tecnologia">C#</span>
+                                                                    <span class="tecnologia">ASP.NET Core MVC</span>
+                                                                    <span class="tecnologia">EF Core</span>
+                                                                    <span class="tecnologia">Azure</span>
+                                                                    <span class="tecnologia">SQL Server</span>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -161,27 +230,28 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="projeto dev-web front-end col-md-10 col-lg-6 col-xxl-4">
-                                <div class="card-projeto" id="projetoFarom">
+
+                            <!--Rotinize-->
+                            <div class="projeto dev-web full-stack col-md-10 col-lg-6 col-xxl-4">
+                                <div class="card-projeto" id="rotinize">
                                     <div class="capa-card">
-                                        <img src="img/coming-soon3.svg" alt="" class="img-projeto">
-                                        <div class="titulo-projeto">Zarom</div>
-                                        <div class="rotulos">
-                                            <span class="rotulo">Desenvolvimento web</span>
-                                            <span class="rotulo">Front-end</span>
-                                        </div>
+                                        <img src="img/thumbnail-rotinize.svg" alt="" class="thumbnail-projeto">
                                     </div>
                                     <div class="txt-projeto">
-                                        <div class="subtitulo-secao titulo-projeto">Zarom</div>
-                                        <div class="texto-secao descricao-projeto">Uma <i>landing page</i> da empresa de psicologia Zarom, com o intuito de apresentar os serviços, treinamentos e cursos oferecidos.</div>
-                                        <button class="ver-detalhes bt-primario-escuro" data-bs-toggle="modal" data-bs-target="#modalProjetoFarom">Ver detalhes</button>
+                                        <div class="rotulos">
+                                            <span class="rotulo">Desenvolvimento web</span>
+                                            <span class="rotulo">Full-stack</span>
+                                        </div>
+                                        <div class="texto-secao descricao-projeto">Uma aplicação web para estabelecer e acompanhar metas e atividades saudáveis na rotina.</div>
+                                        <button class="ver-detalhes bt-primario-escuro" data-bs-toggle="modal" data-bs-target="#modalRotinize">Ver detalhes</button>
                                     </div>
                                 </div>
-                                <div class="modal fade" id="modalProjetoFarom" tabindex="-1" aria-labelledby="modalLabelProjetoFarom" aria-hidden="true">
+                                <!--Modal Rotinize-->
+                                <div class="modal fade" id="modalRotinize" tabindex="-1" aria-labelledby="modalLabelRotinize" aria-hidden="true">
                                     <div class="modal-dialog modal-lg modal-dialog-centered">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h1 class="modal-title fs-5" id="modalLabelProjetoFarom">Farom</h1>
+                                                <h1 class="modal-title fs-5" id="modalLabelRotinize">Rotinize</h1>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body">
@@ -192,12 +262,17 @@
                                                     <div class="col-lg-6">
                                                         <div class="texto-modal">
                                                             <div class="detalhes-projeto">
-                                                                <div class="txt-secao">A página atualmente está em fase de planejamento. Em breve serão adicionados detalhes sobre o projeto.</div>
+                                                                <div class="txt-secao">Projeto desenvolvido de forma independente para praticar as tecnologias aprendidas no segundo semestre de Análise e Desenvolvimento de Sistemas. A aplicação atualmente está em fase de desenvolvimento e em breve serão adicionados detalhes sobre o projeto.</div>
                                                                 <div class="tecnologias">
                                                                     <span class="tecnologia">HTML</span>
                                                                     <span class="tecnologia">CSS</span>
                                                                     <span class="tecnologia">JavaScript</span>
                                                                     <span class="tecnologia">Bootstrap</span>
+                                                                    <span class="tecnologia">C#</span>
+                                                                    <span class="tecnologia">ASP.NET Core MVC</span>
+                                                                    <span class="tecnologia">EF Core</span>
+                                                                    <span class="tecnologia">Azure</span>
+                                                                    <span class="tecnologia">SQL Server</span>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -264,7 +339,6 @@
                     <a href="https://github.com/isabelaborgs/portfolio" target="_blank"><i class="fa-brands fa-github" data-bs-toggle="tooltip" data-bs-title="Código-fonte da página"></i></a>
                 </span>
             </div>
-            <div id="creditosIlustracoes">Ilustrações por <a href="https://pixels.market/illustrations/yellowstripe" target="_blank">Pixels Market <i class="align-middle fa-solid fa-arrow-up-right-from-square"></i></a></div>
         </footer>
     </body>
 </html>

@@ -106,7 +106,7 @@
     background: var(--violeta);
 }
 
-.tecnologia, .rotulo {
+.tecnologia {
     background-color:rgba(192, 131, 239, 0.2);
     color: var(--violeta);
 }
