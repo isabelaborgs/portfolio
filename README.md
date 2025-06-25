@@ -21,7 +21,8 @@
 * Aplicar preferência de tema armazenada automaticamente ao carregar a página;
 * Responsividade em dispositivos com diferentes tamanhos de tela.
   
-![telas-portfolio](https://github.com/user-attachments/assets/fdca52e1-ff16-4044-83b8-733b33226840)
+
+![mockup-portfolio](https://github.com/user-attachments/assets/d13bd106-bcec-464c-a161-a3a23b355ff7)
 
 
 https://github.com/user-attachments/assets/ef199ba1-6741-4c17-aaeb-3c955bac904b
