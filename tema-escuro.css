@@ -90,6 +90,11 @@
     color: var(--violeta);
 }
 
+#habilidades .icon {
+    background-color: var(--violeta);
+    color: var(--violeta-mais-escuro);
+}
+
 /* Seção "Projetos" */
 .filtro:hover {
     color: var(--violeta) !important;
